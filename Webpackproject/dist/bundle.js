@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../CRAproject/src/index.tsx":
-/*!***********************************!*\
-  !*** ../CRAproject/src/index.tsx ***!
-  \***********************************/
+/***/ "../CRAproject/src/test.ts":
+/*!*********************************!*\
+  !*** ../CRAproject/src/test.ts ***!
+  \*********************************/
 /***/ (() => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31merror while parsing tsconfig.json\\u001b[39m\\n    at Object.loader (D:\\\\job\\\\sample\\\\WebpackProject\\\\node_modules\\\\ts-loader\\\\dist\\\\index.js:17:18)\");\n\n//# sourceURL=webpack://webpackproject/../CRAproject/src/index.tsx?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31merror while parsing tsconfig.json\\u001b[39m\\n    at Object.loader (D:\\\\job\\\\sample\\\\WebpackProject\\\\node_modules\\\\ts-loader\\\\dist\\\\index.js:17:18)\");\n\n//# sourceURL=webpack://webpackproject/../CRAproject/src/test.ts?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["../CRAproject/src/index.tsx"]();
+/******/ 	__webpack_modules__["../CRAproject/src/test.ts"]();
 /******/ 	
 /******/ })()
 ;

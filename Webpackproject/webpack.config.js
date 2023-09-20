@@ -2,12 +2,11 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: '../CRAproject/src/index.tsx',
+    entry: '../CRAproject/src/test.ts',
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
                 exclude: /node_modules/,
                 use: [{
                     loader: 'ts-loader',
