@@ -1,16 +1,12 @@
 {
-    "extends": "../CRAproject/tsconfig",
+    // "extends": "../CRAproject/tsconfig",
     "compilerOptions": {
-        "noEmit": true,
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node"
     }
 }
-//?
-// 在 WebpackProject 讀 CRAprokject 隨便一個新建一個 index.js 檔
-// ok
-// 在 WebpackProject 讀 CRAprokject 隨便一個新建一個 index.tsx 檔
-// 在 WebpackProject 讀 CRAprokject 隨便一個新建一個 react index.tsx 檔
-// 從 WebpackProject 讀 CRAproject react js
-// 整理 webpack 下面的部分
-// https://stackoverflow.com/questions/40426378/webpack-ts-loader-change-tsconfig-filename
-//?
-// 判斷 JS 有沒有被 cash 找個 web page
