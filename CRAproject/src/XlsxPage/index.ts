@@ -1,9 +1,12 @@
+
 const XlsxPageRoute = {
     path: "xlsx",
     async lazy() {
         const { XlsxPage, loader } = await import(/*webpackChunkName: "XlsxPage" */"./XlsxPageRoute")
-        return { Component: XlsxPage, loader }
-    }
+        const ErrorPage = await import(/*webpackChunkName: "ErrorPage" */"../ErrorElement")
+        return { Component: XlsxPage, loader, ErrorBoundary: ErrorPage }
+    },
+
 
 }
 

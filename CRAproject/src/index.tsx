@@ -9,6 +9,7 @@ import XlsxPageRoute from './XlsxPage';
 
 const router = createBrowserRouter([
   MainPageRoute,
+  //@ts-ignore
   XlsxPageRoute
 ])
 

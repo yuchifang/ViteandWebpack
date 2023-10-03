@@ -4,6 +4,7 @@ import { getData } from "../api";
 import TableRow from "@mui/material/TableRow";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead } from "@mui/material";
 import * as XLSX from "xlsx"
+import { error } from "console";
 
 
 
@@ -17,7 +18,7 @@ interface Item {
 
 
 function ItemColum({ name, height, weight, old }: Item) {
-    console.log("123")
+    // console.log("123")
     return <TableRow>
         <TableCell align="right">{name}</TableCell>
         <TableCell align="right">{height}</TableCell>

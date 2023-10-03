@@ -2,7 +2,7 @@
   "name": "webpackproject",
   "version": "1.0.0",
   "description": "",
-  "main": "../CRAproject/src/index.tsx",
+  "main": "./index.tsx",
   "scripts": {
     "dev": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",

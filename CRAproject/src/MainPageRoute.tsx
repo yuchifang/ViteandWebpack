@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import ErrorPage from './ErrorElement';
 
 
 function MainPage() {
+
   return (
     <div >
       <Link to="/xlsx">XlsxPage</Link>
@@ -14,4 +16,5 @@ function MainPage() {
 export default {
   path: "/",
   element: <MainPage />,
+  errorElement: <ErrorPage />
 };

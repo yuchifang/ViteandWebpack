@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: "development",
-    entry: '../CRAproject/src/index.tsx',
+    // entry: '../CRAproject/src/index.tsx',
+    entry: "./index.tsx",
     module: {
         rules: [
             {
@@ -34,6 +35,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: 'Custom template',
             filename: "index.html",
             template: "./index.html",
         })
