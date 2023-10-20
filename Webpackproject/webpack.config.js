@@ -2,9 +2,20 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: "development",
+    devServer: {
+        devMiddleware: {
+            writeToDisk: true,
+        },
+        open: {
+            app: {
+                name: "chrome",
+            }
+        },
+        hot: true,
+    },
     // entry: '../CRAproject/src/index.tsx',
     entry: "./index.tsx",
+    mode: "development",
     module: {
         rules: [
             {
@@ -26,10 +37,8 @@ module.exports = {
             },
         ],
     },
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
-    },
     output: {
+        clean: true,
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
@@ -39,5 +48,8 @@ module.exports = {
             filename: "index.html",
             template: "./index.html",
         })
-    ]
+    ],
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
 };

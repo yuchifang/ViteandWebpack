@@ -4,8 +4,8 @@ import App from "./App"
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
-
-
+//@ts-ignore
+console.log(module.hot)
 root.render(
     <React.StrictMode>
         <App />
