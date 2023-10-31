@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devServer: {
-        devMiddleware: {
-            writeToDisk: true,
-        },
+        // devMiddleware: {
+        // writeToDisk: true,
+        // },
         open: {
             app: {
                 name: "chrome",
@@ -13,9 +13,8 @@ module.exports = {
         },
         hot: true,
     },
-    // entry: '../CRAproject/src/index.tsx',
-    entry: "./index.tsx",
-    mode: "development",
+    entry: './src/index.tsx',
+    mode: process.env?.NODE_ENV ? process.env.NODE_ENV : "development",
     module: {
         rules: [
             {
@@ -39,7 +38,7 @@ module.exports = {
     },
     output: {
         clean: true,
-        filename: 'bundle.js',
+        filename: '[name].[contenthash:5].js',
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [

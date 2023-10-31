@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "webpack",
     "start": "webpack serve ",
+    "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "^18.2.24",
-    "@types/react-dom": "^18.2.8",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
@@ -23,7 +25,14 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.15",
+    "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "web-vitals": "^3.5.0",
+    "xlsx": "^0.18.5"
   }
 }
