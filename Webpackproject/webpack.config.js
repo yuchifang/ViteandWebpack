@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
     devServer: {
         // devMiddleware: {
@@ -13,7 +13,11 @@ module.exports = {
         },
         hot: true,
     },
-    entry: './src/index.tsx',
+    entry: {
+        index: {
+            import: './src/index.tsx'
+        }
+    },
     mode: process.env?.NODE_ENV ? process.env.NODE_ENV : "development",
     module: {
         rules: [
@@ -36,6 +40,12 @@ module.exports = {
             },
         ],
     },
+    optimization: {
+        // moduleIds: "deterministic",
+        splitChunks: {
+            chunks: "all",
+        }
+    },
     output: {
         clean: true,
         filename: '[name].[contenthash:5].js',
@@ -46,7 +56,8 @@ module.exports = {
             title: 'Custom template',
             filename: "index.html",
             template: "./index.html",
-        })
+        }),
+        new BundleAnalyzerPlugin(),
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
