@@ -6,12 +6,14 @@ module.exports = {
         // devMiddleware: {
         // writeToDisk: true,
         // },
+        hot: true,
         open: {
             app: {
                 name: "chrome",
             }
         },
-        hot: true,
+        port: 8080,
+
     },
     entry: {
         index: {
@@ -41,9 +43,21 @@ module.exports = {
         ],
     },
     optimization: {
-        // moduleIds: "deterministic",
+        moduleIds: "deterministic",
         splitChunks: {
-            chunks: "all",
+            // minSize: 1,
+            // chunks: 'all',
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'initial',
+                },
+                xlsxChunks: {
+                    test: /[\\/]node_modules[\\/]xlsx[\\/]/,
+                    name: 'xlsxChunk',
+                }
+            },
         }
     },
     output: {

@@ -4,7 +4,8 @@ import { getData } from "../api";
 import TableRow from "@mui/material/TableRow";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead } from "@mui/material";
 import * as XLSX from "xlsx"
-
+import dayjs from "dayjs";
+import moment from "moment";
 
 
 export async function loader() {
@@ -17,7 +18,8 @@ interface Item {
 
 
 function ItemColum({ name, height, weight, old }: Item) {
-    // console.log("123")
+    console.log(moment("20111031", "YYYYMMDD").fromNow())
+    console.log(dayjs('2018-08-08'))
     return <TableRow>
         <TableCell align="right">{name}</TableCell>
         <TableCell align="right">{height}</TableCell>

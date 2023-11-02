@@ -4,12 +4,13 @@ import './index.css';
 import MainPageRoute from './MainPageRoute';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import XlsxPageRoute from './XlsxPage';
+import DayJSRoute from './DayJSRoute';
 
 
 const router = createBrowserRouter([
   MainPageRoute,
-  //@ts-ignore
-  XlsxPageRoute
+  XlsxPageRoute,
+  DayJSRoute
 ])
 
 const root = ReactDOM.createRoot(
