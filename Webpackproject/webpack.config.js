@@ -66,6 +66,9 @@ module.exports = {
         filename: '[name].[contenthash:5].js',
         path: path.resolve(__dirname, 'dist'),
     },
+    performance: {
+        maxAssetSize: 5120000
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Custom template',
