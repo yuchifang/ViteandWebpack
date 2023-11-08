@@ -45,9 +45,8 @@ module.exports = {
     optimization: {
         moduleIds: "deterministic",
         splitChunks: {
-            // minSize: 1,
+            minSize: 1,
             // chunks: 'all',
-            maxSize: 250000,
             cacheGroups: {
                 vendor: {
                     test: /[\\/]node_modules[\\/]/,
