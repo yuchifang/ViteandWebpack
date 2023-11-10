@@ -8,7 +8,8 @@ function MainPage() {
 
   return (
     <div >
-      <Link to="/xlsx">XlsxPage</Link>
+      <Link style={{ padding: "10px" }} to="/xlsx">XlsxPage</Link>
+      <Link to="/img">IMGPage</Link>
     </div>
   );
 }

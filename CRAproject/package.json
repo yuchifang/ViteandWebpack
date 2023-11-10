@@ -14,13 +14,19 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@types/react-router-dom": "^5.3.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "source-map-explorer": "^2.5.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
+    "webpack": "^5.89.0",
     "xlsx": "^0.18.5"
   },
   "scripts": {
@@ -28,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "webpackDev": "webpack serve",
+    "webpackProd": "cross-env NODE_ENV=production webpack"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +57,9 @@
     ]
   },
   "devDependencies": {
+    "url-loader": "^4.1.1",
+    "webpack-bundle-analyzer": "^4.9.1",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }
 }

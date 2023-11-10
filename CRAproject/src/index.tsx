@@ -5,12 +5,13 @@ import MainPageRoute from './MainPageRoute';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import XlsxPageRoute from './XlsxPage';
-
+import IMGRoute from './IMGRoute';
 
 const router = createBrowserRouter([
   MainPageRoute,
   //@ts-ignore
-  XlsxPageRoute
+  XlsxPageRoute,
+  IMGRoute
 ])
 
 const root = ReactDOM.createRoot(

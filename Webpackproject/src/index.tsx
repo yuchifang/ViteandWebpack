@@ -5,12 +5,13 @@ import MainPageRoute from './MainPageRoute';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import XlsxPageRoute from './XlsxPage';
 import DayJSRoute from './DayJSRoute';
-
+// import IMGRoute from "./IMGRoute"
 
 const router = createBrowserRouter([
   MainPageRoute,
   XlsxPageRoute,
-  DayJSRoute
+  DayJSRoute,
+  // IMGRoute
 ])
 
 const root = ReactDOM.createRoot(
