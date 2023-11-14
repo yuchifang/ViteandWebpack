@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
     devServer: {
-        // devMiddleware: {
-        // writeToDisk: true,
-        // },
+        devMiddleware: {
+            writeToDisk: true,
+        },
         hot: true,
         open: {
             app: {
@@ -23,6 +23,15 @@ module.exports = {
     mode: process.env?.NODE_ENV ? process.env.NODE_ENV : "development",
     module: {
         rules: [
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset',
+                parser: { // ***
+                    dataUrlCondition: {
+                        maxSize: 4 * 1024 // 4kb
+                    }
+                }
+            },
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
@@ -64,6 +73,7 @@ module.exports = {
         clean: true,
         filename: '[name].[contenthash:5].js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: '[contenthash:5]~[ext][query]'
     },
     performance: {
         maxAssetSize: 5120000

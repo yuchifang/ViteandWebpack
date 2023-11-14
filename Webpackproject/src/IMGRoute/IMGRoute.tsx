@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import img from "../../public/logo192.png"
+//@ts-ignore
+import img from "../../public/logo192.png"
 
-export default function IMGRoute() {
+export function IMGRoute() {
     <Link to="/">MainPage</Link>
 
     return <div>
-        {/* {img && img} */}
+        {img && img}
         <p>IMGRoute</p>
     </div>;
 }

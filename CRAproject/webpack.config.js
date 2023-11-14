@@ -60,7 +60,4 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
     },
-    stats: {
-        children: true,
-    },
 }
