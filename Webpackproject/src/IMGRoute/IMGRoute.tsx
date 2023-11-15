@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import img from "../../public/logo192.png"
 
 export function IMGRoute() {
-    <Link to="/">MainPage</Link>
 
     return <div>
         {img && img}
-        <p>IMGRoute</p>
+        <Link to="/">MainPage</Link>
     </div>;
 }
 IMGRoute.displayName = "IMGRoute"
