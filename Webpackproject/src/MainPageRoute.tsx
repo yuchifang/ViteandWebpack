@@ -9,6 +9,7 @@ function MainPage() {
       <Link style={{ padding: "10px" }} to="/xlsx">XlsxPage</Link>
       <Link to="/dayjs">DayJS</Link>
       <Link style={{ padding: "10px" }} to="/img">IMG</Link>
+      <Link to="/vite">Vite</Link>
     </div>
   );
 }

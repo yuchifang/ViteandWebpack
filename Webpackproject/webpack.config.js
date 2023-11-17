@@ -80,7 +80,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Custom template',
+            title: 'webpack',
             filename: "index.html",
             template: "./index.html",
         }),

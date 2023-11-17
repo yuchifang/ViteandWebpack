@@ -6,7 +6,7 @@ import img from "../../public/logo192.png"
 export function IMGRoute() {
 
     return <div>
-        {img && img}
+        {img && <img src={img} />}
         <Link to="/">MainPage</Link>
     </div>;
 }
