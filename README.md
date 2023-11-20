@@ -1,4 +1,4 @@
-# viteandwebpack
+# ViteandWebpack
 ### CRAproject
 這個專案是用 webpack替換 create-react-app中 react-scripts,來開啟 react專案,以達到在打包時更加靈活不會被 react-scripts限制.\
 雖然網路上有 library可以達到類似的效果,但大多都沒有維護,所以才決定直接用 webpack取代
