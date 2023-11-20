@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-html": "^1.0.3",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-serve": "^2.0.2"
+  },
+  "dependencies": {
+    "rollup": "^4.4.0",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-import-css": "^3.3.5"
+  }
+}

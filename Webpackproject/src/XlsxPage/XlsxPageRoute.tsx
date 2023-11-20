@@ -20,6 +20,7 @@ interface Item {
 function ItemColum({ name, height, weight, old }: Item) {
     console.log(moment("20111031", "YYYYMMDD").fromNow())
     console.log(dayjs('2018-08-08'))
+    console.log("test")
     return <TableRow>
         <TableCell align="right">{name}</TableCell>
         <TableCell align="right">{height}</TableCell>

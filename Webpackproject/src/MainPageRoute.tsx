@@ -10,6 +10,7 @@ function MainPage() {
       <Link to="/dayjs">DayJS</Link>
       <Link style={{ padding: "10px" }} to="/img">IMG</Link>
       <Link to="/vite">Vite</Link>
+      <Link style={{ padding: "10px" }} to="/vite/commonJS">Vite CommonJS</Link>
     </div>
   );
 }
