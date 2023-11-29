@@ -39,7 +39,7 @@ export function XlsxPage() {
         XLSX.utils.book_append_sheet(workbook, worksheet, "Dates");
         XLSX.writeFile(workbook, "Presidents.xlsx", { compression: true });
     }
-    return <div>
+    return <div className="xlsxpage">
         <Link to="/">MainPage</Link>
         <TableContainer sx={{ width: 700 }} component={Paper}>
             <Table sx={{ maxWidth: 650 }} aria-label="simple table">

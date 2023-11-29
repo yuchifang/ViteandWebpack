@@ -1,4 +1,5 @@
 import ErrorPage from "../ErrorElement"
+import "./index.scss"
 const XlsxPageRoute = {
     path: "xlsx",
     async lazy() {
