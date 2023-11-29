@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+/webpackBuild
 
 # misc
 .DS_Store

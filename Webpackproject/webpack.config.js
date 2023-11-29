@@ -72,8 +72,14 @@ module.exports = {
     output: {
         clean: true,
         filename: '[name].[contenthash:5].js',
-        path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: '[contenthash:5]~[ext][query]'
+        path: path.resolve(__dirname, 'webpackBuild'),
+        assetModuleFilename: '[contenthash:5]~[ext][query]',
+        library: {
+            type: "module"
+        }
+    },
+    experiments: {
+        outputModule: true,
     },
     performance: {
         maxAssetSize: 5120000
